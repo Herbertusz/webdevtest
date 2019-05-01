@@ -3,6 +3,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/libpeerconnection.log
 
 # Runtime data
 pids
@@ -21,7 +22,9 @@ lib-cov
 # testing
 /coverage
 
-# production
+# compiled output
+/dist
+/out-tsc
 /build
 
 # Dependency directory
@@ -33,13 +36,33 @@ lib-cov
 # Optional REPL history
 .node_repl_history
 
+# temporary files
+/tmp
+*.tmp
+*.tmp.*
+
 # misc
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+/.sass-cache
+/connect.lock
+/typings
+$RECYCLE.BIN/
+.DS_Store
+Thumbs.db
 
 #ide
-/.idea/
-/nbproject/
+/.idea
+/nbproject
+/.vscode
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# project-specific
